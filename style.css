@@ -1,7 +1,14 @@
+html {
+  background-color: black;
+}
 h1 {
   text-align: center;
+  color: white;
+  font-size: 45px;
+  font-family: "winky rough";
 }
 #container {
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   justify-self: center;
@@ -9,4 +16,21 @@ h1 {
   height: 1000px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.reset {
+  text-align: center;
+}
+
+#new:hover {
+  color: azure;
+  background-color: blue;
+}
+#new {
+  font-family: "winky rough";
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  font-size: 20px;
 }

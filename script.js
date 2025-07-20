@@ -32,13 +32,19 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-try {
-  let gridDim = prompt("Enter the number of rows of the grid between 20 - 100");
-  if (gridDim < 20 || gridDim > 100 || gridDim == "") {
-    alert("Invalid input! Please enter a valid value ;)");
-  } else {
-    createGrid(gridDim);
+const btn = document.querySelector("#new");
+
+btn.addEventListener("click", () => {
+  try {
+    let gridDim = prompt(
+      "Enter the number of rows of the grid between 20 - 100"
+    );
+    if (gridDim < 20 || gridDim > 100 || gridDim == "") {
+      alert("Invalid input! Please enter a valid value ;)");
+    } else {
+      createGrid(gridDim);
+    }
+  } catch (error) {
+    console.log(error);
   }
-} catch (error) {
-  console.log(error);
-}
+});
