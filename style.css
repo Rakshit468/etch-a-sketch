@@ -5,9 +5,8 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   justify-self: center;
-  height: 508px;
-  width: 508px;
+  height: 500px;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
-  border: 10px solid black;
 }
